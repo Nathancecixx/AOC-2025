@@ -76,20 +76,20 @@ If you prefer using `input.txt` via stdin, you can easily change `main.cpp` to r
 
 > ⭐ = Part 1 done, ⭐⭐ = Part 1 + Part 2
 
-| Day | Puzzle Name     | Language | Status | Notes                         |
-| --- | --------------- | -------- | ------ | ----------------------------- |
-| 01  | Secret Entrance | C++      | ⭐⭐     | Dial rotations + modular math |
-| 02  | *TBD*           | C++      | ⬜⬜     |                               |
-| 03  | *TBD*           | C++      | ⬜⬜     |                               |
-| 04  | *TBD*           | C++      | ⬜⬜     |                               |
-| 05  | *TBD*           | C++      | ⬜⬜     |                               |
-| 06  | *TBD*           | C++      | ⬜⬜     |                               |
-| 07  | *TBD*           | C++      | ⬜⬜     |                               |
-| 08  | *TBD*           | C++      | ⬜⬜     |                               |
-| 09  | *TBD*           | C++      | ⬜⬜     |                               |
-| 10  | *TBD*           | C++      | ⬜⬜     |                               |
-| 11  | *TBD*           | C++      | ⬜⬜     |                               |
-| 12  | *TBD*           | C++      | ⬜⬜     |                               |
+| Day | Puzzle Name     | Language | Status    | Notes                                 |
+| --- | --------------- | -------- | --------- | ------------------------------------- |
+| 01  | Secret Entrance | C++      | ⭐⭐     | Dial rotations + modular math         |
+| 02  | Gift Shop       | C++      | ⭐⭐     | Range scanning + repeated pattern IDs |
+| 03  | *TBD*           | C++      | ⬜⬜     |                                       |
+| 04  | *TBD*           | C++      | ⬜⬜     |                                       |
+| 05  | *TBD*           | C++      | ⬜⬜     |                                       |
+| 06  | *TBD*           | C++      | ⬜⬜     |                                       |
+| 07  | *TBD*           | C++      | ⬜⬜     |                                       |
+| 08  | *TBD*           | C++      | ⬜⬜     |                                       |
+| 09  | *TBD*           | C++      | ⬜⬜     |                                       |
+| 10  | *TBD*           | C++      | ⬜⬜     |                                       |
+| 11  | *TBD*           | C++      | ⬜⬜     |                                       |
+| 12  | *TBD*           | C++      | ⬜⬜     |                                       |
 
 > This year there is only 12 days of code
 

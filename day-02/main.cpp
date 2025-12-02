@@ -13,6 +13,43 @@ bool IsInvalidId(long long n) {
     return s.substr(0, half) == s.substr(half, half);
 }
 
+bool IsInvalidId_part2(long long n) {
+    std::string s = std::to_string(n);
+    int nlen = static_cast<int>(s.size());
+
+    //can't be repeated if fewer than 2 digits
+    if (nlen < 2) return false;
+
+    //Try all possible block lengths
+    for (int len = 1; len <= nlen / 2; ++len) {
+        //block length must divide total length
+        if (nlen % len != 0) continue;
+
+        int repeats = nlen / len;
+        //Must repeat at least twice
+        if (repeats < 2) continue;
+
+        const std::string block = s.substr(0, len);
+        bool allMatch = true;
+
+        //Check each subsequent block matches the first
+        for (int i = len; i < nlen; i += len) {
+            if (s.compare(i, len, block) != 0) {
+                allMatch = false;
+                break;
+            }
+        }
+
+        if (allMatch) {
+            //found a pattern that repeats >= 2 times
+            return true;
+        }
+    }
+
+    return false;
+}
+
+
 long long HandleRange(const std::string& str_range) {
     long long start, end;
     char dash;
@@ -22,7 +59,7 @@ long long HandleRange(const std::string& str_range) {
 
     long long sum = 0;
     for (long long id = start; id <= end; ++id) {
-        if (IsInvalidId(id)) {
+        if (IsInvalidId_part2(id)) {
             sum += id;
         }
     }
